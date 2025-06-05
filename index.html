@@ -1,0 +1,186 @@
+<html>
+<head>
+ <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      color: white;
+      background-color: #6A0DAD;
+    }
+    .navbar {
+      font size: 18px;
+      background-color: #5A0A9C;
+      content: center;
+    }
+   .navbar ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; 
+      gap: 24px; 
+      padding: 12px 8px;
+    }
+    .navbar a {
+      font-size: 18px; 
+      padding: 8px 12px; 
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;    
+    }
+    .navbar a:hover {
+      color: #CBA0FF;
+    }
+   .navbar ul {
+      list-style: none;
+    }
+    header {
+      background-color: #5A0A9C;
+      text-align: center;
+      padding: 32px 16px;
+    }
+    h1{ 
+      font-size: 42px;
+    }
+    .tagline {
+      font-size: 17px;
+      color: #CBA0FF;
+    }
+    section {
+      padding: 32px 16px;
+      border-bottom: 1px solid #CBA0FF;
+    }
+    h2 {
+      font-size: 32px;
+      color: #CBA0FF;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .project-card {
+      background-color: #7E39B4;
+      margin: 16px 0;
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .project-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 6px;
+    }
+    .skills h3 {     
+      color: #ffffff;
+      font-size: 24.5px;
+    }
+    .skill-bars .bar {
+      margin: 10px 0;
+    }
+    .skill-bars label {
+      display: block;
+      margin-bottom: 6px;
+    }
+    .progress {
+      background-color: #CBA0FF;
+      border-radius: 5px;
+      height: 15px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .progress-fill {
+      background-color: #ffffff;
+      height: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #5A0A9C;
+      text-align: center;
+      padding: 16px;
+      font-size: 5px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">&#127968;Home</a></li>
+      <li><a href="#about">&#128100;About</a></li>
+      <li><a href="#projects">&#128640;Projects</a></li>
+      <li><a href="#skills">&#128161;Skills</a></li>
+      <li><a href="#contact">&#128222;Contact</a></li>
+    </ul>
+  </nav>
+  <header id="home">
+    <img src="flower.jpeg" alt="Flower Logo" style="height: 200px;width: 200px; border-radius: 80%;">
+    <h1>Welcome to My Portfolio</h1>
+    <p class="tagline">B.Sc. Computer Science Student at VIT Vellore | Frontend Web Developer | Python Enthusiast</p>
+  </header>
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate web developer with a love for creative design and clean code. I enjoy turning ideas into visually appealing websites.</p>
+    <p>📄 <a href="resume.html" style="color: #CBA0FF;">View My Resume</a></p>  
+  </section>
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+    <img src="code.jpg" alt="Project 1">
+  <div>
+    <p><strong>Project One</strong><br>This project is about building a personal portfolio using HTML, CSS, and animations.</p>
+    <div style="margin-top: 10px;">
+      <a href="project1.html" style="background-color: #CBA0FF; color: #5A0A9C; padding: 6px 12px; border-radius: 4px; display: inline-block; text-decoration: none;">View Project</a>
+    </div>
+  </div>
+</div>
+    <div class="project-card">
+  <img src="waterfalls.jpeg" alt="Project 2">
+  <div>
+    <p><strong>Project Two</strong><br>Seljalandsfoss - A beautiful waterfall in Iceland at sunset.</p>
+    <div style="margin-top: 10px;">
+      <a href="project2.html" style="background-color: #CBA0FF; color: #5A0A9C; padding: 6px 12px; border-radius: 4px; display: inline-block; text-decoration: none;">View Project</a>
+    </div>
+  </div>
+</div>
+  </section>
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-list">
+      <h3> &#128221 Text List</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+    </div>
+    <div class="skill-bars">
+      <h3> &#128202 Skill Levels</h3>
+      <div class="bar">
+        <label>HTML</label>
+        <div class="progress"><div class="progress-fill" style="width: 92%;"></div></div>
+      </div>
+      <div class="bar">
+        <label>CSS</label>
+        <div class="progress"><div class="progress-fill" style="width: 87%;"></div></div>
+      </div>
+      <div class="bar">
+        <label>JavaScript</label>
+        <div class="progress"><div class="progress-fill" style="width: 80%;"></div></div>
+      </div>
+      <div class="bar">
+        <label>Python</label>
+        <div class="progress"><div class="progress-fill" style="width: 97%;"></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: reena@gmail.com</p>
+    <p>LinkedIn: linkedin.com/in/reena</p>
+  </section>
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
